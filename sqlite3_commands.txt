@@ -1,0 +1,56 @@
+sqlite3 Toronto.db
+
+.mode csv
+
+.separator ,
+
+# Create table
+create table nodes(
+id INTEGER NOT NULL,
+lat REAL,
+lon REAL,
+user TEXT,
+uid INTEGER,
+version INTEGER,
+changeset INTEGER,
+timestamp TEXT);
+        
+.import nodes.csv nodes
+
+CREATE TABLE nodes_tags (
+     id INTEGER,
+     key TEXT,
+     value TEXT,
+     type TEXT,
+     FOREIGN KEY (id) REFERENCES nodes(id)
+);
+
+.import nodes_tags.csv nodes_tags
+
+CREATE TABLE ways (
+id INTEGER PRIMARY KEY NOT NULL,
+user TEXT,
+uid INTEGER,
+version TEXT,
+changeset INTEGER,
+timestamp TEXT);
+        
+.import ways.csv ways
+
+CREATE TABLE ways_tags (
+id INTEGER NOT NULL,
+key TEXT NOT NULL,
+value TEXT NOT NULL,
+type TEXT,
+FOREIGN KEY (id) REFERENCES ways(id));
+
+ .import ways_tags.csv ways_tags
+
+CREATE TABLE ways_nodes (
+id INTEGER NOT NULL,
+node_id INTEGER NOT NULL,
+position INTEGER NOT NULL,
+FOREIGN KEY (id) REFERENCES ways(id),
+FOREIGN KEY (node_id) REFERENCES nodes(id));
+
+.import ways_nodes.csv ways_nodes

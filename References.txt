@@ -1,0 +1,21 @@
+References
+
+References have been provided at the start of every python file, but are 
+consolidated here in addition to any other references used for this project:
+    
+    Udacity Data Wrangling Project References:
+        - '2. Project Details' portion of the Open Street Map Data Project
+        - Lesson 13, Part 3
+        - Lesson 13, Part 10
+        - Lesson 13, Part 11
+        
+    External Resources:
+        - https://discussions.udacity.com/t/changing-attribute-value-in-xml/44575/6    
+        - http://stackoverflow.com/questions/3095434/inserting-newlines-in-xml-file-generated-via-xml-etree-elementtree-in-python
+        - https://gist.github.com/carlward/54ec1c91b62a5f911c42#file-sample_project-md
+        - https://docs.python.org/2/howto/regex.html
+        - https://docs.python.org/2/library/re.html
+        - http://sebastianraschka.com/Articles/2014_sqlite_in_python_tutorial.html
+        - https://stackoverflow.com/questions/4686376/changing-a-value-in-sqlite3
+        - http://www.sqlitetutorial.net/sqlite-delete/
+        - https://stackoverflow.com/questions/25454857/show-human-readable-file-sizes-in-osx-terminal

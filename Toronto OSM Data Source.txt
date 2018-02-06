@@ -1,0 +1,8 @@
+Toronto Open Street Maps Data Source
+
+For this project I will be analyzing the Open Street Maps data pertaining to the city of Toronto in Canada as it my city of residence.
+
+- https://www.openstreetmap.org/relation/324211
+- http://overpass-api.de/api/map?bbox=-79.6694,43.5635,-79.0851,43.8736
+
+The original OSM XML file was exported from Overpass API using the following coordinates as the bounding area: -79.6694 to -79.0891 and 43.5635 to 43.8736.
