@@ -63,3 +63,5 @@ select nodes_tags.value,count(nodes_tags.value) from
 coffee_id,nodes_tags where coffee_id.id=nodes_tags.id and
 nodes_tags.key='name' group by nodes_tags.value order by
 count(nodes_tags.value) desc limit 5;)
+
+Note that the database isn't present as it's too large to host.
